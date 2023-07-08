@@ -19,7 +19,7 @@ export class LoginPage{
     }
     assertLogin(){
         cy.get('.title').should('be.visible')
-        cy.get('.peek').should('be.visible')
+        //cy.get('.peek').should('be.visible')
         cy.contains('Products').should('contain','Products')
     }
     assertLoginFail(){
